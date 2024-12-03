@@ -39,7 +39,7 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
           cache: maven
-      - run: mvn -B clean verify --file pom.xml sonar:sonar -Dsonar.projectKey=application--deliverynow-order -Dsonar.host.url=https://92e7-186-227-111-38.ngrok-free.app -Dsonar.login=sqp_ec7e0cb666ced6f6124ee5f2c38f1e73109ef3fd
+      - run: mvn -B clean verify --file pom.xml sonar:sonar -Dsonar.projectKey=application--deliverynow-order -Dsonar.host.url=https://b70e-186-227-111-38.ngrok-free.app -Dsonar.login=sqp_ec7e0cb666ced6f6124ee5f2c38f1e73109ef3fd
 
   build:
     runs-on: ubuntu-latest
