@@ -13,6 +13,9 @@
 
 ![System design](img/diagrama-arquitetura.png)
 
+## | 🖥️ • Cobertura de teste
+
+![System design](img/cobertura-order.png)
 
 ## | 🖥️ • Event Storming
 - https://miro.com/miroverse/sistema-de-delivery/?social=copy-link
