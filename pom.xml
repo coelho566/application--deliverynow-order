@@ -19,8 +19,8 @@
 <!--        <sonar.coverage.jacoco.xmlReportPaths>-->
 <!--            target/jacoco-report/jacoco.xml-->
 <!--        </sonar.coverage.jacoco.xmlReportPaths>-->
-        <sonar.coverage.exclusions>**/test/**,**/config/**,**/exception/**,**/response/**, **/request/**,**/entity/**,**/dto/**, pom.xml</sonar.coverage.exclusions>
-        <sonar.exclusions>**/test/**,**/config/**,**/exception/**,**/response/**, **/request/**,**/entity/**,**/dto/**, pom.xml</sonar.exclusions>
+        <sonar.coverage.exclusions>**/test/**,**/config/**,**/exception/**,**/response/**, **/request/**,**/entity/**,**/dto/**,**/rest/**, pom.xml</sonar.coverage.exclusions>
+        <sonar.exclusions>**/test/**,**/config/**,**/exception/**,**/response/**, **/request/**,**/entity/**,**/dto/**,**/rest/** pom.xml</sonar.exclusions>
         <sonar.sources>src,pom.xml</sonar.sources>
         <sonar.test.inclusions>src/test/**/*</sonar.test.inclusions>
         <sonar.tests>src</sonar.tests>
