@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deliverynow-order-deployment
+spec:
+  selector:
+    matchLabels:
+      app: application-deliverynow-order
+  template:
+    metadata:
+      name: application-deliverynow-order
+      labels:
+        app: application-deliverynow-order
+    spec:
+      containers:
+        - name: apireplicate
+          image: 836507624722.dkr.ecr.us-east-1.amazonaws.com/application-deliverynow-order:latest
+#          env:
+#            - name: URL_WEBHOOK
+#              valueFrom:
+#                configMapKeyRef:
+#                  key: URL_WEBHOOK
+#                  name: db-config
+#            - name: QUARKUS_MONGODB_CONNECTION_STRING
+#              valueFrom:
+#                configMapKeyRef:
+#                  key: QUARKUS_MONGODB_CONNECTION_STRING
+#                  name: db-config
+          ports:
+            - containerPort: 8082
+#          livenessProbe:
+#            httpGet:
+#              path: /application--deliverynow-order/q/health
+#              port: 8080
+#            initialDelaySeconds: 20
+#            periodSeconds: 30
+          resources:
+            limits:
+              cpu: "300m"
+              memory: "512Mi"
+            requests:
+              cpu: "300m"
+              memory: "512Mi"
