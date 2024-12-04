@@ -13,7 +13,7 @@
 
 ![System design](img/diagrama-arquitetura.png)
 
-## | 🖥️ • Cobertura de teste
+## | 🖥️ • Cobertura de Teste
 
 ![System design](img/cobertura-order.png)
 
